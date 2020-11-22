@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+    <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+.table-borderless ;
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size:15px; border-spacing: 5px;
+}
+    img {
+        font-size:20px
+    }
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.container {
+    
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+
+}
+ .main_ {
+    text-align :center; 
+}
+.text-secondary{
+    width:80px
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body><nav  class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <li class="active">  <a class="navbar-brand" href="#">Ismail course </a> </li>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a  href="{{ path('home') }}" >Home</a></li>
+      <li ><a  href="{{ path('Course') }}">About JavaScript </a>
+      </li>
+      <li><a href="{{ path('contact') }}">Contact</a></li>
+      <li><a href="{{ path('Exercices') }}">Exercices</a></li>
+    </ul>
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="{{ path('login') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="{{path('sign')}}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+     <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <a href="#" class="btn btn-default">Find</a>
+    </form>
+     </div>
+</nav>
+  
+        <br> <br> <br>
+          <div class="container"> 
+          {% block body %}
+          
+          {% endblock %}
+    </div>
+        
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

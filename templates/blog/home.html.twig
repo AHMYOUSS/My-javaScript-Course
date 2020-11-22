@@ -1,0 +1,89 @@
+{% extends "base.html.twig" %}
+{% block body %}
+   <link rel="stylesheet" href="home.css">
+  
+<blockquote class="blockquote">
+
+    <h2> What is programming? </h2>
+    <p> There are many different definitions of computer programming, but Martin O'Hanlon's is simple. Watch his video to find out the three basic structures.</p>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FCMxA3m_Imc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><br> 
+    <h3>“Programming is how you get computers to solve problems.” </h3>
+
+    <ul> There are two key phrases here which are important:
+    <li>you: without the programmer (you), the computer is useless. It does what you tell it to do. </li>
+    <li>solve problems: computers are tools. They are complex tools, admittedly, but they are not mysterious or magical: they exist to make tasks easier. </li>
+    </ul>
+
+
+    <p>Computer programs (or software) are what make computers work. Without software, modern computers are just complicated machines for turning electricity into heat. It’s software on your computer that runs your operating system, browser, email, games, movie player – just about everything. </p>
+    <p> Programming is a creative task: there is no right or wrong way to solve a problem, in the same way that there is no right or wrong way to paint a picture. There are choices to be made, and one way may seem better than another, but that doesn’t mean the other is wrong! With the right skills and experience, a programmer can craft software to solve an unlimited number of problems – from telling you when your next train will arrive to playing your favourite music. The possibilities are constrained only by your imagination. That’s why I love programming.</p>
+    <img src="https://s3-eu-west-1.amazonaws.com/rpf-futurelearn/programming-101-educators/Illustrations+and+animations/1.5-What-Is-Programming.gif" width="1080" height="480" text-align="cetner">
+    <br> <br>
+
+    <p>When you create a program for a computer, you give it a set of instructions, which it will run one at a time in order, precisely as given. If you told a computer to jump off a cliff, it would! </p>
+     
+        <ol>
+        <li> turn and face the cliff </li>
+        <li>walk towards the cliff </li>
+        <li> stop at the edge of the cliff </li>
+        <li> jump off the cliff</li>
+         </ol>
+
+         <br>
+
+
+         <p>To stop computers constantly falling off cliffs, they can also make choices about what to do next: </p>
+         <!-- NEED MODIFIER-->
+         <p> If I wont survive the fall, don't jump off the cliff</p>
+
+
+
+         <p> Computers never get bored and are really good at doing the same thing over and over again. Instruction 2 above might look in more detail like this:</p>
+         
+         <ol >
+          <li>  left foot forward </li>
+          <li>  right foot forward </li> 
+         <li> go back to 1</li> </ol>
+        <img src="https://s3-eu-west-1.amazonaws.com/rpf-futurelearn/programming-101-educators/Illustrations+and+animations/Computer-Walk-Cycle.gif" heigh="480" width="720">
+        <p> These three concepts are the basic logical structures in computer programming:<p>
+        <div style="width:400px ;background-color:#C2C2C2 ">
+        <ol>
+        <li>Sequence: running instructions in order </li>
+        <li> Selection: making choices </li>
+        <li>Repetition: doing the same thing more than once </li>
+        </ol></div>
+
+        <p> Add to these concepts the ability to deal with inputs and outputs and to store data, and you have the tools to solve the majority of all computing problems.</p>
+        <h3>Programming Languages </h3> 
+       
+        <p> Unfortunately, computers don’t understand languages like English or Spanish, so we have to use a programming language they understand to give them instructions.</p>
+        
+        <p> There are many different programming languages, all of which have their own merits, and certain languages are better suited to particular types of task, but there is no one language which is the ‘best’.</p>
+
+        <p> In this course you will be programming using a language called Python. Python is one of a group of languages called “general-purpose programming languages”, which can be used to solve a wide variety of problems. Other popular languages in this category are C, Ruby, Java and BASIC.</p>
+
+            <p> This is a small Python program which asks the user to enter their name and says “Hi” to them:</p>
+            
+            <h5 class="paython"> 
+                print(<span style="color:red" >"Hello and welcome."</span>) <br>
+                name = <span style="color:red" >input</span>(<span style="color" >"Whats your name?"</span>)<br>
+                if name == <span style="color" >"Martin":<br>
+                print(<span style="color" >"Thats my name too!"<span>)<br>
+                print(<span style="color" >"Hi "</span> + name)<br>
+            </h5>
+                <br>
+
+                <p>You don’t need to be a computer programmer to be able read this code. It contains English words and it is readable (if not perhaps understandable). However, by the end of this course you will understand this code, what it does, and the concepts it uses. </p>
+                <p> You don’t need to be a computer programmer to be able read this code. It contains English words and it is readable (if not perhaps understandable). However, by the end of this course you will understand this code, what it does, and the concepts it uses.</p>
+                <p> Programs are often referred to as code and hence programming is also known as coding.</p>
+
+
+
+
+
+
+</blockquote>
+
+{% endblock %}
